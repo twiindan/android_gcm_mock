@@ -49,7 +49,7 @@ Implementation of Android Mock allowing several configurations
 
     To save a response send a request to the following path:
 
-    http:{host}:{port}/save_response
+    POST http:{host}:{port}/save_response
 
     In the body should be included the response to be served by the mock.
 
@@ -62,7 +62,7 @@ Implementation of Android Mock allowing several configurations
 
     To save a error send a request to the following path:
 
-    http:{host}:{port}/save_error
+    POST http:{host}:{port}/save_error
 
     In the body should be included only the HTTP error code to be served by the mock.
 
@@ -74,7 +74,7 @@ Implementation of Android Mock allowing several configurations
 
     To reset the errors send a request to the following path:
 
-    http:{host}:{port}/reset_responses
+    GET http:{host}:{port}/reset_responses
 
     The server responses with 200 responses deleted
 
@@ -83,7 +83,7 @@ Implementation of Android Mock allowing several configurations
 
     To get all the errors send a request to the following path:
 
-    http:{host}:{port}/get_errors
+    GET http:{host}:{port}/get_errors
 
     The server responses with 200 and JSON with all the errors saved
 
@@ -92,7 +92,7 @@ Implementation of Android Mock allowing several configurations
 
     To get all the responses send a request to the following path:
 
-    http:{host}:{port}/get_responses
+    GET http:{host}:{port}/get_responses
 
     The server responses with 200 and JSON with all the responses saved
 
@@ -103,12 +103,12 @@ Implementation of Android Mock allowing several configurations
 
     To get all the bodies received in the mock send a request to:
 
-    http:{host}:{port}/stats
+    GET http:{host}:{port}/stats
 
     To get all the headers received in the mock send a request to:
 
-    http:{host}:{port}/get_headers
+    GET http:{host}:{port}/get_headers
 
     To reset all the stats send a request to:
 
-    http:{host}:{port}/reset_stats
+    GET http:{host}:{port}/reset_stats
