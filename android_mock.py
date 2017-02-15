@@ -1,10 +1,8 @@
 #!/usr/bin/python2.7
 #-*- coding: utf-8 -*-
 #
-# Copyright 2013 Telefonica Digital. All rights reserved.
-#
 # Authors:
-#    Antonio Robres < arobres@tid.es> - 2013
+#    Antonio Robres
 #
 
 from bottle import run, post, request, error, route, HTTPError, get
